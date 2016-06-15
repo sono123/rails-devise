@@ -15,7 +15,9 @@
     <header>
       <%= render 'layouts/navigation' %>
     </header>
-      <%= render 'layouts/messages' %>
-      <%= yield %>
+    	<div class="container top-spacer">
+      	<%= render 'layouts/messages' %>
+      	<%= yield %>
+      </div>
   </body>
 </html>
