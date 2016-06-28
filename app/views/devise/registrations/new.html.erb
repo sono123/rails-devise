@@ -3,6 +3,14 @@
     <h3>Sign up</h3>
     <%= devise_error_messages! %>
     <div class="form-group">
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name, :autofocus => true, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name, :autofocus => true, class: 'form-control' %>
+    </div>
+    <div class="form-group">
       <%= f.label :email %>
       <%= f.email_field :email, :autofocus => true, class: 'form-control' %>
     </div>
@@ -18,6 +26,7 @@
       <%= f.label :invite_code %>
       <%= text_field_tag :invite_code %>
     </div>
+    <!-- 'RSVP123' -->
      <%= f.submit 'Sign up', :class => 'button right' %>
   <% end %>
 </div>
